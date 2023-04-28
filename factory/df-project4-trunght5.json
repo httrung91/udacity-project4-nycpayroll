@@ -1,0 +1,9 @@
+{
+	"name": "df-project4-trunght5",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b62a516b-b09d-4444-a87f-6653666f6e65",
+		"tenantId": "23d2cb46-2d06-403b-9449-3e0a7616976f"
+	}
+}
