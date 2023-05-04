@@ -1,0 +1,33 @@
+{
+	"name": "ds_synapse_agency_md",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "link_synapse_nycpayroll",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "payroll_agency_md.csv",
+				"fileSystem": "synapsenycpayrolltrunght"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "AgencyID",
+				"type": "String"
+			},
+			{
+				"name": "AgencyName",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
